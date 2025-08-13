@@ -1,0 +1,8 @@
+"$schema" = "schemas/schema.json"
+
+[default]
+description = "Default permissions for macos-passkey plugin"
+permissions = [
+  "allow-register-passkey",
+  "allow-login-passkey"
+]

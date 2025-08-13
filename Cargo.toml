@@ -1,0 +1,22 @@
+[package]
+name = "tauri-plugin-macos-passkey"
+version = "0.1.0"
+description = "Call macOS Passkey registration/login APIs in Tauri apps with ease!"
+authors = ["Minghua Yang <yminghua8@gmail.com>"]
+license = "MIT OR Apache-2.0"
+edition = "2021"
+links = "tauri-plugin-macos-passkey"
+keywords = ["tauri", "macos", "passkey", "webauthn", "prf"]
+repository = "https://github.com/yminghua/tauri-plugin-macos-passkey"
+readme = "README.md"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+tauri = { version = "2", features = [] }
+swift-rs = { version = "1.0.5" }
+tokio = { version = "1", features = ["full"] }
+futures = { version = "0.3" }
+serde = { version = "1", features = ["derive"] }
+
+[build-dependencies]
+swift-rs = { version = "1.0.5", features = ["build"] }
+tauri-plugin = { version = "2", features = ["build"] }
