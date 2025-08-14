@@ -7,8 +7,24 @@ license = "MIT OR Apache-2.0"
 edition = "2021"
 links = "tauri-plugin-macos-passkey"
 keywords = ["tauri", "macos", "passkey", "webauthn", "prf"]
+categories = ["authentication", "os::macos-apis", "api-bindings", "gui"]
 repository = "https://github.com/yminghua/tauri-plugin-macos-passkey"
 readme = "README.md"
+homepage = "https://github.com/yminghua/tauri-passkey-demo"
+exclude = [
+  # Rust build artifacts
+  "/target",
+
+  # Swift build artifacts and metadata
+  "/swift-lib/.DS_Store",
+  "/swift-lib/.build",
+  "/swift-lib/Packages",
+  "/swift-lib/xcuserdata/",
+  "/swift-lib/DerivedData/",
+  "/swift-lib/.swiftpm/configuration/registries.json",
+  "/swift-lib/.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata",
+  "/swift-lib/.netrc",
+]
 
 [target.'cfg(target_os = "macos")'.dependencies]
 tauri = { version = "2", features = [] }
