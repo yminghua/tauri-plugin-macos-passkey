@@ -1,5 +1,11 @@
 # tauri-plugin-macos-passkey
 
+[![Crates.io Version](https://img.shields.io/crates/v/tauri-plugin-macos-passkey)](https://crates.io/crates/tauri-plugin-macos-passkey)
+[![Crates.io Downloads](https://img.shields.io/crates/d/tauri-plugin-macos-passkey)](https://crates.io/crates/tauri-plugin-macos-passkey)
+![License: MIT OR Apache-2.0](https://img.shields.io/crates/l/tauri-plugin-macos-passkey)
+[![Tauri 2.0](https://img.shields.io/badge/Tauri-2.0-blueviolet?logo=tauri)](https://v2.tauri.app/)
+![macOS 15+](https://img.shields.io/badge/macOS-15%2B-success?logo=apple)
+
 A Tauri plugin that lets your Tauri app call macOS native Passkey APIs for registration and login, with optional support for returning the Passkey PRF extension output.
 
 ## Setup
